@@ -1,8 +1,5 @@
 # Python dependencies for GemMolt
 
-# Core dependencies
-python>=3.8
-
 # GCP dependencies (optional but recommended for production)
 google-cloud-secret-manager>=2.16.0
 google-cloud-iam>=2.12.0
