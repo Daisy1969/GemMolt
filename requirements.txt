@@ -1,0 +1,23 @@
+# Python dependencies for GemMolt
+
+# Core dependencies
+python>=3.8
+
+# GCP dependencies (optional but recommended for production)
+google-cloud-secret-manager>=2.16.0
+google-cloud-iam>=2.12.0
+google-auth>=2.17.0
+
+# Configuration management
+pyyaml>=6.0
+
+# Development dependencies
+pytest>=7.3.0
+pytest-cov>=4.0.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
+
+# Documentation
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.2.0

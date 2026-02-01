@@ -1,0 +1,55 @@
+# Example configuration for GemMolt
+# Copy this to config.yaml and customize for your setup
+
+security:
+  # GCP project ID for identity and secret management
+  gcp_project_id: "your-gcp-project-id"
+  
+  # Enable/disable GCP integration
+  use_gcp: true
+  
+  # Path to service account key (optional)
+  # service_account_key: "/path/to/service-account-key.json"
+
+tasks:
+  # Maximum number of tasks to keep in history
+  max_history: 100
+  
+  # Task execution timeout (seconds)
+  timeout: 300
+
+monitoring:
+  # Maximum number of events to keep in history
+  max_history: 1000
+  
+  # Monitoring interval (seconds)
+  interval: 60
+  
+  # Alert thresholds
+  thresholds:
+    cpu_percent: 80
+    memory_percent: 85
+    disk_percent: 90
+
+integration:
+  # Enable system command execution (use with caution)
+  enable_system_commands: false
+  
+  # Allowed command patterns (if enabled)
+  allowed_commands:
+    - "git*"
+    - "npm*"
+    - "docker*"
+  
+  # System resource monitoring
+  monitor_resources: true
+
+logging:
+  # Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  level: "INFO"
+  
+  # Log file path (optional)
+  # file: "/var/log/gemmolt/gemmolt.log"
+  
+  # Log format
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
